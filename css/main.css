@@ -1,0 +1,518 @@
+body {
+    background: linear-gradient(to bottom right, #0B0C10, #3F4853);
+    color: #C5C6C7;
+    font-family: 'Courier';
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #1F2833 inset !important;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #C5C6C7 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited, a:active, a:link {
+    color: #C5C6C7;
+}
+
+p {
+    margin-left: 20px;
+}
+
+input[type="submit"] {
+    background-color: #0B0C10;
+    border: 2px solid;
+    border-bottom: 2px solid #35928E;
+    border-right: 2px solid #35928E;
+    color: #66FCF1;
+    font-size: 14px;
+    padding: 3px 6px;
+}
+
+input[type="submit"]:active {
+    border-top: 2px solid #35928E;
+    border-left: 2px solid #35928E;
+    border-bottom: 2px solid #66FCF1;
+    border-right: 2px solid #66FCF1;
+}
+
+input[type="submit"]:hover {
+    background-color: #4B4C60;
+}
+
+input[type="text"], 
+input[type="password"], 
+input[type="number"], 
+input[type="datetime-local"],
+select 
+{
+    border: 1px solid #C5C6C7;
+    background-color: #1F2833;
+    color: #C5C6C7;
+    margin: 2px;
+    padding: 3px;
+}
+
+li {
+    list-style: none;
+}
+
+div.banner {
+    align-items: center;
+    background-color: #1F2833;
+    border-bottom: 2px solid #45A29E;
+    color: #45A29E;
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+    justify-content: space-between;
+    margin: 0 15px 5px 15px;
+    padding: 3px;
+    text-align: center;
+}
+
+div.banner h1 {
+    color: #f5f5f5;
+    font-family: verdana;
+    font-size: 40px;
+    letter-spacing: 20px;
+    font-weight: 700;
+    margin: 10px;
+    transform: skewX(-15deg);
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+
+div.banner a:visited, div.banner a:active {
+    color: #f5f5f5;
+}
+
+h2 {
+    color: #66FCF1;
+}
+
+div.monitor {
+    border: 3px solid #66FCF1;
+    height: 45px;
+    margin: 10px;
+    width: 40px;
+}
+
+div.mini {
+    background-color: #45A29E;
+    border: 2px solid #66FCF1;
+    height: 25px;
+    margin: 0 auto;
+    width: 28px;
+}
+
+div.key {
+    border: 2px solid #66FCF1;
+    height: 10px;
+    margin: 0 auto;
+    width: 32px;
+}
+
+div.login {
+    margin-left: auto;
+}
+
+form.login {
+    color: #66FCF1;
+    text-align: right;
+    font-size: 14px;
+}
+
+menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+menu a, menu a:visited {
+    background-color: #35928E;
+    border: 3px solid #35928E;
+    border-radius: 5px;
+    color: #EEE;
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 2px 5px;
+}
+
+menu a:hover {
+    border: 3px solid #66FCF1;
+    transition: all 0.3s linear;
+    color: #66FCF1;
+}
+
+div.admin_menu {
+    font-size: 16px;
+    margin-left: auto;
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: left;
+}
+
+div.admin_menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+div.admin_menu a {
+    background-color: transparent;
+    border: none;
+    color: #C5C6C7;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div.admin_menu a:hover {
+    color: #66FCF1;
+}
+
+div.admin_menu h4 {
+    color: #66FCF1;
+    margin: 0;
+}
+
+div.defaults, 
+div.connections, 
+div.devices, 
+div.users {
+    padding-left: 6%;
+    padding-right: 30%;
+}
+
+div.connections a, div.template a {
+    background-color: #75D2CE;
+    color: #0B0C10;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 3px 4px;
+}
+
+div.connections a:hover, div.template a:hover {
+    background-color: #45A29E;
+}
+
+div.connections h4 {
+    margin-bottom: 10px;
+    color: #45A29E;
+}
+
+div.connections th {
+    text-align: left;
+}
+
+div.template tr.add td {
+    padding-top: 30px;
+}
+
+div.template h3 {
+    color: #66FCF1;
+}
+
+div.template th, table.install th, table.install td {
+    text-align: left;
+}
+
+td.space {
+    height: 20px;
+}
+
+div.template input[name="oid"] {
+    width: 250px;
+}
+
+div.template input[name="low"],
+div.template input[name="high"]
+{
+    width: 40px;
+}
+
+div.template input[name="message"] {
+    width: 400px;
+}
+
+div.users input[name="name"], 
+div.users input[name="login"], 
+div.users input[name="pass"]
+{
+    width: 120px;
+}
+
+.info {
+    font-size: 14px;
+    font-weight: normal;
+    color: #f66;
+}
+
+div.footer {
+    border-top: 2px solid #45A29E;
+    margin: 20px;
+    text-align: center;
+}
+
+div.devices input[name="name"]{
+    width: 150px;
+}
+
+div.devices input[name="ip"]{
+    width: 100px;
+}
+
+div.devices input[name="ping_attempts"],
+div.devices input[name="ping_timeout"]
+{
+    width: 115px;
+}
+
+div.alarms {
+    font-size: 20px;
+}
+div.alarms table {
+    margin: 0 auto;
+}
+
+div.alarms th {
+    text-align: left;
+}
+
+div.alarms td {
+    color: black;
+    padding: 0 5px;
+    text-align: left;
+}
+
+div.alarms a {
+    color: #000;
+}
+
+div.alarms td.time {
+    font-size: 16px;
+}
+
+div.alarms td.dev_name {
+    font-weight: 900;
+}
+
+div.alarms td.dev_name:hover, div.alarms a:hover {
+    background-color: #1F2833;
+    color: #FFF;
+    transition: all 0.3s linear;
+}
+
+div.alarms td.ack {
+    padding: 0;
+}
+
+div.alarms input[type="submit"] {
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    width: 100%;
+}
+
+div.alarms input[type="submit"]:hover {
+    background-color: #0B0C10;
+}
+
+div.alarms input[name="ack"] {
+    background-color: #00A000;
+}
+
+div.alarms input[name="unack"] {
+    background-color: #A00;
+}
+
+a.selected_page {
+    font-weight: bold;
+}
+
+.notification, .notification_blink {
+    background-color: #E2E8FF;
+}
+
+.notification_blink {
+    animation: notification_blink 1.3s linear infinite;
+}
+
+@keyframes notification_blink {
+    50% {
+        background-color: #B2B8CF;
+    }
+}
+
+.minor, .minor_blink {
+    background-color: #ff6;
+}
+
+.minor_blink {
+    animation: minor_blink 1.3s linear infinite;
+}
+
+@keyframes minor_blink {
+    50% {
+        background-color: #CC3;
+    }
+}
+
+.major, .major_blink {
+    background-color: #ffb10a;
+}
+
+.major_blink {
+    animation: major_blink 1.3s linear infinite;
+}
+
+@keyframes major_blink {
+    50% {
+        background-color: #CC8007;
+    }
+}
+
+.critical, .critical_blink {
+    background-color: #f66;
+}
+
+.critical_blink {
+    animation: critical_blink 1.3s linear infinite;
+}
+
+@keyframes critical_blink {
+    50% {
+        background-color: #c33;
+    }
+}
+
+.cleared {
+    background-color: #7e7;
+}
+
+div.log {
+    text-align: center;
+}
+
+div.log td {
+    color: black;
+    padding: 2px 10px;
+    text-align: left;
+}
+
+div.log table, table.install {
+    margin: 0 auto;
+}
+
+p.sort a {
+    color: #45A29E;
+}
+
+p.sort a:hover {
+    color: #66FCF1;
+}
+
+div.devices {
+    padding: 2%;
+}
+
+div.devices_list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0;
+    width: 100%;
+}
+
+div.device_list {
+    border: 1px solid white;
+    margin: 10px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+div.device_list p {
+    margin: 0;
+}
+
+div.device_list a {
+    background-color: #5F6873;
+    border: 1px solid white;
+    color: #66FCF1;
+    font-weight: bold;
+    margin-bottom: 2px;
+    padding: 4px 3px;
+    text-decoration: underline;
+}
+
+div.device_list a:hover {
+    color: #45A29E;
+}
+
+div.mon {
+    border: 2px solid white;
+    display: inline-block;
+    height: 50%;
+    margin: 2px auto;
+    padding: 3px;
+}
+
+div.mon div {
+    height: 30px;
+    width: 100%;
+}
+
+div.mon p {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+div.one_device {
+    text-align: center;
+}
+
+h3.one_device {
+    text-align: center;
+}
+
+form[name="launch"] {
+    text-align: center;
+}
+
+form[name="launch"] input {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div.cols_2 div {
+    display: inline-block;
+    margin-left: 2%;
+}

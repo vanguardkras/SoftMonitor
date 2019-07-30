@@ -1,0 +1,1 @@
+<p><?= ERROR_PAGE ?></p>
