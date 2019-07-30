@@ -1,5 +1,5 @@
 #Soft Monitor
 
-[Project address](https://shaian.com)
+[Project address](https://mshaian.com)
 
-[Project Documentation](https://shaian.com/doc/soft_monitor/)
+[Project Documentation](https://mshaian.com/doc/soft_monitor/)
