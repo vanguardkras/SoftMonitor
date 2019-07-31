@@ -6,7 +6,6 @@
 =========================================
 
 ## 1. The purpose of this application.
------------------------------------
 
 "Soft Monitor" web-application was made to monitor status and failures of different equipment that use SNMP, such as Power Systems and telecommunication devices, using Apache/Nginx + MySQL + PHP server as a basis. It was designed for dispatchers who can detect a malfunction quickly using the application's interface and functions.
 
@@ -23,7 +22,6 @@ PHP 7.2+ (with snmp package)
 MySQL 5.7+
 
 ## 2. Soft Monitor User's Guide.
-------------------------------
 
 ### 2.1 Installation and Run.
 Copy all the application's to the web-server docs directory. Open your browser and input the web-server address, or http://localhost if it is the same computer. You will see the installation dialogue:
