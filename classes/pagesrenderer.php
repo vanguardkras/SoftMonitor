@@ -123,11 +123,18 @@ class PagesRenderer extends Renderer
         
         if ($this->admin) {
             if (isset($_POST['run'])) {
-                for ($i = 0; $i < $proc_num; $i++) {
+                for ($i = 0; $i < $proc_num; $i++) 
+                if (stristr(php_uname('a'), 'windows')) {
                     pclose(popen('start /B php run.php ' . $i . ' ' . $proc_num, "r"));
+                } else {
+                    pclose(popen('php -f run.php ' . $i . ' ' . $proc_num, "r"));
                 }
             } elseif (isset($_POST['stop'])) {
-                $cmd = 'taskkill /IM "php.exe" /F';
+                if (stristr(php_uname('a'), 'windows')) {
+                    $cmd = 'taskkill /IM "php.exe" /F';
+                } else {
+                    $cmd = 'killall php';
+                }
                 exec($cmd);
             }
 
